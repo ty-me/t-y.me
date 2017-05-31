@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<div class="resume">
+    <h1 class="resume__title">{{ page.title }}</h1>
+    <p class="resume__date">更新时间：{{ page.date | date:  "%Y-%m-%d" }}</p>
+    <p class="resume__meta">{{ tags_content }}</p>
+    <div class="resume__content"?>
+        {{ content }}
+    </div>
+</div>

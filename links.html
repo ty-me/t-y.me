@@ -1,0 +1,19 @@
+---
+id: 296
+title: 友情链接
+date: 2015-05-11T17:35:25+00:00
+author: TY
+layout: default
+guid: http://t-y.me/?page_id=296
+views:
+  - 459
+duoshuo_thread_id:
+  - 1163061200838197282
+---
+
+<ul>
+    {% for item in site.data.links %}
+    <li><a href="{{ item.url }}" target="_blank">{{ item.name}}</a></li>
+    {% endfor %}
+</ul>
+

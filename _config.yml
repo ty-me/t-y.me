@@ -1,0 +1,30 @@
+# Blog settings
+#
+
+url: 'https://t-y.me'
+name: 'TY.ME'
+description: 'Freelancer | Web developer(Python &amp; Ruby)'
+google_verification: null
+
+paginate: 15
+paginate_path: 'blog/p:num/'
+
+
+# File management
+include: [".htaccess"]
+exclude: ["README.md", "LICENSE", "stash"]
+
+
+# Sass
+sass:
+  style: :compressed
+  sass_dir: _sass
+
+
+# Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+
