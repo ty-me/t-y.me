@@ -4,7 +4,21 @@
 @import "reset";
 @import "config";
 
-img {max-width:600px; height:auto;}
+img {max-width:$img-max-width; height:auto;}
+
+table{
+    width:100%;
+    margin:14px 0px;
+}
+
+table thead{
+  font-weight:bold;
+}
+
+table tr{
+    height:$tr-height;
+    line-height:$tr-height;
+}
 
 .text-center{
   text-align:center;
