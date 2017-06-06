@@ -1,6 +1,6 @@
 ---
 id: 371
-title:HTML中li标签之间显示空白的问题
+title: HTML中li标签之间显示空白的问题
 date: 2016-11-23T17:42:09+00:00
 author: TY
 layout: post

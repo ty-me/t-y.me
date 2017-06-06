@@ -3,7 +3,7 @@
 
 url: 'https://t-y.me'
 name: 'TY.ME'
-description: 'Freelancer | Web developer(Python &amp; Ruby)'
+description: 'Web developer(Python &amp; Ruby). Based in Shanghai China'
 google_verification: null
 
 paginate: 15
@@ -27,4 +27,24 @@ kramdown:
   input: GFM
   hard_wrap: false
 highlighter: rouge
+
+
+gems:
+  - jekyll-gallery-generator
+
+
+gallery:
+  dir: photos               # Path to the gallery
+  symlink: true            # false: copy images into _site. true: create symbolic links (saves disk space)
+  title: "Photos"           # Title for gallery index page
+  title_prefix: "Photos: "  # Title prefix for gallery pages. Gallery title = title_prefix + gallery_name
+  sort_field: "date_time"   # How to sort galleries on the index page.
+                            # Possible values are: title, date_time, best_image
+  thumbnail_size:
+    x: 180                  # max width of thumbnails (in pixels)
+    y: 180                  # max height of thumbnails (in pixels)
+
+  galleries:
+      demo:
+          best_image: 1.jpeg
 
