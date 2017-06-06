@@ -29,7 +29,7 @@ duoshuo_thread_id:
 | Sql              | ★ ★ ★ ☆ ☆
 | JavaScript       | ★ ★ ★ ☆ ☆
 | HTML/CSS         | ★ ★ ★ ☆ ☆
-| Angularjs        | ★ ★ ☆ ☆ ☆ |
+| Angularjs        | ★ ★ ★ ☆ ☆ |
 | PHP              | ★ ★ ☆ ☆ ☆
 
 
@@ -39,7 +39,3 @@ duoshuo_thread_id:
 ![](http://tyblog.qiniudn.com/16-8-13/48373848.jpg?imageMogr2/thumbnail/600x)
 
 
-_**关于未来，就请你坦然，不要离开，不要离开**_ &#8212; 朴树《在希望的田野上》 
-
-
-<audio src="http://t-y.me/wp-content/uploads/2013/08/在希望的田野上.mp3"></audio>
