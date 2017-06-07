@@ -8,9 +8,12 @@ guid: http://t-y.me/?page_id=38
 duoshuo_thread_id:
   - 38
 ---
+![](http://tyblog.qiniudn.com/16-8-13/48373848.jpg?imageMogr2/thumbnail/600x)
+
+
 89年生，web后端工程师
 
-高中时代开始接触*gvbasic*，于是走上了码农这条不归路，喜欢摄影
+高中时代开始接触*GVBASIC*，于是走上了码农这条不归路，喜欢摄影
 
 目前在上海，从事Web开发，主要使用Python(Django) & Ruby(Rails) 
 
@@ -33,9 +36,6 @@ duoshuo_thread_id:
 | PHP              | ★ ★ ☆ ☆ ☆
 
 
-找我写代码？[点这里联系我](/contact)
-
-
-![](http://tyblog.qiniudn.com/16-8-13/48373848.jpg?imageMogr2/thumbnail/600x)
+找我写代码？[点这里](/contact)
 
 
