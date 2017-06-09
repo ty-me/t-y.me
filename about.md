@@ -3,7 +3,7 @@ id: 38
 title: 关于
 date: 2013-08-10T21:09:17+00:00
 author: TY
-layout: about
+layout: page
 guid: http://t-y.me/?page_id=38
 duoshuo_thread_id:
   - 38

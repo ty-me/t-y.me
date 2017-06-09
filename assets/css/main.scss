@@ -4,12 +4,29 @@
 @import "reset";
 @import "config";
 
-img {max-width:$img-max-width; height:auto;}
+.main-content{
+    ul{
+		list-style: circle;
+		margin-left: 18px;
+		margin-top: 10px;
+		margin-bottom: 20px;
+    }
+    h2{
+      margin-top:20px;
+      margin-bottom:10px;
+    }
+    table tr{
+      margin:10px auto;
+    }
+}
 
 table{
     width:100%;
     margin:14px 0px;
 }
+
+img {max-width:$img-max-width; height:auto;}
+
 
 table thead{
   font-weight:bold;
@@ -46,6 +63,7 @@ body {
 
 footer{
   margin:15px 0 0 0;
+  border-top:#cecece;
   color:$color-dark;
 }
 
@@ -106,7 +124,7 @@ ul {
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 	@media screen and (max-width: $br) {
 		display: block;
 	}
@@ -142,7 +160,8 @@ ul {
 		margin-bottom: 5px;
 	}
     ul li{
-        padding-left:0px;
+        padding:0;
+        margin:0;
     }
 }
 
@@ -158,10 +177,10 @@ ul {
 	}
 }
 
-.post__title, .resume__title, .about__title{
+.post__title, .resume__title, .page__title{
     text-align:center;
 }
-.post__date, .resume__data, .abount__date{
+.post__date, .resume__data, .page__date{
     text-align:right;
 }
 
@@ -170,19 +189,6 @@ ul {
         font-weight:800;
   }
   &__content {
-    ul{
-		list-style: circle;
-		margin-left: 18px;
-		margin-top: 10px;
-		margin-bottom: 20px;
-    }
-    h2{
-      margin-top:20px;
-      margin-bottom:10px;
-    }
-    table tr{
-      margin:10px auto;
-    }
   }
 
 }
@@ -281,11 +287,11 @@ ul {
 	}
 }
 
-.about {
+.page {
 	&__title {
 		font-size: 1.6em;
 		font-weight: 700;
-		margin-top: 20px;
+		margin-top: 10px;
 		margin-bottom: 10px;
 	}
 	&__content {
