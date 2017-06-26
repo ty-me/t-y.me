@@ -3,6 +3,7 @@ id: 724
 date: 2016-06-28T16:37:19+00:00
 author: TY
 layout: default
+comments: false
 guid: http://t-y.me/?page_id=724
 views:
   - 176
