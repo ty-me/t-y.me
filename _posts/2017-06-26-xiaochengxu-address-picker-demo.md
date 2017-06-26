@@ -4,6 +4,7 @@ title: 微信小程序三级地址联动选择器的实现
 date: 2017-06-02T12:03:21+00:00
 author: TY
 layout: post
+comments: true
 permalink: /p/373
 categories:
   - WEB
