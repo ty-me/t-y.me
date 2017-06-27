@@ -214,4 +214,4 @@ Page({
 })
 
 ```
-这里所贴的代码为部分主要代码片段，并不完整，仅仅用来说明思路。我将整个demo的代码放在了github上，有需要的可以在这里下载得到源代码：[source code](https://github.com/ty-me/cityDddressPickerDemo)
+这里所贴的代码为部分主要代码片段，并不完整，仅仅用来说明思路。我将整个demo的代码放在了github上，有需要的可以在这里下载得到源代码：[source code](https://github.com/ty-me/addressPickerDemo)
