@@ -9,7 +9,7 @@ views:
   - 176
 ---
 
-![](http://tyblog.qiniudn.com/16-8-13/22779405.jpg?imageMogr2/thumbnail/600x)
+![](http://7o51e6.com5.z0.glb.qiniucdn.com/16-8-13/22779405.jpg?imageMogr2/thumbnail/600x)
 
 <p class="text-center">
   <em><span>上海中环</span><br /> </em>
