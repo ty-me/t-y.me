@@ -1,4 +1,12 @@
-## Films for XJY
+---
+id: 667
+title: Films for XJY
+date: 2017-06-07T15:09:19+00:00
+author: TY
+layout: page
+guid: http://t-y.me/?page_id=667
+---
+
 
 * 布达佩斯大饭店 
   * [豆瓣](https://movie.douban.com/subject/11525673/)  
@@ -66,3 +74,7 @@
 * 驴得水
   * [豆瓣](https://movie.douban.com/subject/25921812/)
   * [优酷视频](http://v.youku.com/v_show/id_XMTg2MDkwMjU2OA==.html?tpa=dW5pb25faWQ9MTAzNTY1XzEwMDAwMV8wMV8wMQ)
+
+
+
+[![Analytics](https://ga-beacon.appspot.com/UA-XXXXX-X/films4xjy)](https://github.com/igrigorik/ga-beacon)
