@@ -25,7 +25,7 @@
     </header>
     <div class="content native-scroll">
       <div class="card" v-if="!newAvatar">
-        <div class="card-header">示例：</div>
+        <div class="card-header">上传你的微信头像，赐你一顶圣诞帽，示例：</div>
         <div class="card-content">
           <div valign="bottom" class="card-header color-white no-border no-padding">
             <img class='card-cover' src="http://p1egcsqlb.bkt.clouddn.com/FjMPy3Rk3e9At9PfvI7MEDvWizrN.png">
@@ -34,7 +34,7 @@
       </div>
 
       <div class="card" v-if="!newAvatar">
-        <div class="card-header"></div>
+        <div class="card-header">上传你当前的微信头像</div>
         <div class="card-content">
           <div class="card-content-inner">
   
@@ -46,7 +46,7 @@
       </div>
 
       <div class="card" v-if="newAvatar">
-        <div class="card-header">长按保存到相册，然后上传作为微信头像即可</div>
+        <div class="card-header">长按保存到相册，然后上传作为微信头像</div>
         <div class="card-content">
           <div valign="bottom" class="card-header color-white no-border no-padding">
             <img class='card-cover' :src="newAvatar">
