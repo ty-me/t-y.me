@@ -37,10 +37,10 @@
         <div class="card-header">上传你当前的微信头像</div>
         <div class="card-content">
           <div class="card-content-inner">
-  
-            <input accept="image/*" multiple type="file" id="file" v-on:change="inputChange"> 
-     
+            <input v-if="!loading" accept="image/*" multiple type="file" id="file" v-on:change="inputChange"> 
+            <div  v-if="loading">生成头像中...</div>
           </div>
+
         </div>
         <div class="card-footer"></div>
       </div>
@@ -52,11 +52,6 @@
             <img class='card-cover' :src="newAvatar">
           </div>
         </div>
-      </div>
-
-
-      <div class="content-block" v-if="!newAvatar">
-        <p><a href="javascript:void(0);" v-bind:class="{disabled: loading || showUploadBtn == false }"  class="button button-big button-round" v-on:click="onUpload">生成头像 </a></p>
       </div>
 
       <div class="content-block" v-if="newAvatar">
@@ -82,15 +77,11 @@
     },
 
     methods: {
-      inputChange: function(e){
-        this.showUploadBtn = true
-      },
 
-      onUpload: function(e){
+      inputChange: function(e){
         this.loading = true
 
         var formData = new FormData(); 
-
 
         formData.append('file', $('#file')[0].files[0]);
 
