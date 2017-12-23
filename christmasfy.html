@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>给我的头像来个圣诞帽吧！</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+  <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">  <!-- 引入样式 -->
+  <style type="text/css">
+    [v-cloak] {
+ display:none;
+}
+  </style>
+</head>
+<body>
+  <div id="app" v-cloak>
+    <header class="bar bar-nav">
+      <h1 class="title">给我的头像来个圣诞帽吧！</h1>
+    </header>
+    <div class="content native-scroll">
+      <div class="card" v-if="!newAvatar">
+        <div class="card-header"></div>
+        <div class="card-content">
+          <div class="card-content-inner">
+  
+            <input accept="image/*" multiple type="file" id="file" v-on:change="inputChange"> 
+     
+          </div>
+        </div>
+        <div class="card-footer"></div>
+      </div>
+
+      <div class="card" v-if="newAvatar">
+        <div class="card-header">长按保存到相册，然后上传作为微信头像即可</div>
+        <div class="card-content">
+          <div valign="bottom" class="card-header color-white no-border no-padding">
+            <img class='card-cover' :src="newAvatar">
+          </div>
+        </div>
+      </div>
+
+      <div class="content-block" v-if="!newAvatar">
+        <p><a href="javascript:void(0);" v-bind:class="{disabled: loading || showUploadBtn == false }"  class="button button-big button-round" v-on:click="onUpload">生成头像 </a></p>
+      </div>
+
+      <div class="content-block" v-if="newAvatar">
+        <p><a href="javascript:void(0);" class="button button-big button-round" v-on:click="newAvatar = ''">重新生成</a></p>
+      </div>      
+
+    </div>
+  </div>
+</body>
+
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+  new Vue({
+    el: '#app',
+    data: function() {
+      return { 
+        visible: false, 
+        newAvatar: '',
+        showUploadBtn: false,
+        loading: false,
+      }
+    },
+
+    methods: {
+      inputChange: function(e){
+        this.showUploadBtn = true
+      },
+
+      onUpload: function(e){
+        this.loading = true
+
+        var formData = new FormData(); 
+
+
+        formData.append('file', $('#file')[0].files[0]);
+
+        formData.append('type', 'test');
+        var that = this
+
+        $.ajax({
+               url: 'http://45.76.215.8:9999/',//这里是后台接口需要换掉
+
+               type: 'POST',
+
+               dataType: 'json',
+
+               cache: false,
+
+               data: formData,
+
+               processData: false,
+
+               contentType: false,   
+
+               error: function(resp){
+                alert('error')
+                that.loading = false
+              },     
+
+              success: function(resp){
+                  that.loading = false
+                  //that.newAvatar = resp
+                  if(resp.status == 1){
+                    alert('服务器出错啦！')
+                  }else{
+                    that.newAvatar = resp.data
+                  }
+                },   
+              })
+      },
+    },
+  })
+</script>
+</html>

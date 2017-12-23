@@ -1,5 +1,4 @@
-source 'https://rubygems.org'
-gem 'json', '1.5.5'
+source 'http://rubygems.org'
 gem 'jekyll'
 gem 'jekyll-sitemap'
 gem 'octopress-paginate'
