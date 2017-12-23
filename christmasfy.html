@@ -25,6 +25,15 @@
     </header>
     <div class="content native-scroll">
       <div class="card" v-if="!newAvatar">
+        <div class="card-header">示例：</div>
+        <div class="card-content">
+          <div valign="bottom" class="card-header color-white no-border no-padding">
+            <img class='card-cover' src="http://p1egcsqlb.bkt.clouddn.com/FjMPy3Rk3e9At9PfvI7MEDvWizrN.png">
+          </div>
+        </div>
+      </div>
+
+      <div class="card" v-if="!newAvatar">
         <div class="card-header"></div>
         <div class="card-content">
           <div class="card-content-inner">
@@ -44,6 +53,7 @@
           </div>
         </div>
       </div>
+
 
       <div class="content-block" v-if="!newAvatar">
         <p><a href="javascript:void(0);" v-bind:class="{disabled: loading || showUploadBtn == false }"  class="button button-big button-round" v-on:click="onUpload">生成头像 </a></p>
