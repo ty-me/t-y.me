@@ -103,18 +103,24 @@
                contentType: false,   
 
                error: function(resp){
-                alert('error')
                 that.loading = false
-              },     
-
-              success: function(resp){
-                  that.loading = false
-                  //that.newAvatar = resp
                   if(resp.status == 1){
                     alert('服务器出错啦！')
                   }else{
                     that.newAvatar = resp.data
                   }
+              },     
+
+              success: function(resp){
+                  that.loading = false
+                  //that.newAvatar = resp
+
+                  if(resp.status == 1){
+                    alert('服务器出错啦！')
+                  }else{
+                    that.newAvatar = resp.data
+                  }
+
                 },   
               })
       },
