@@ -5,6 +5,13 @@
 @import "config";
 
 .main-content{
+    width:100%;
+    .page__title{
+        margin:0 0 15px 0;
+    }
+
+    margin-top:72px;
+
     ul{
 		list-style: circle;
 		margin-left: 18px;
@@ -106,7 +113,11 @@ ul {
 
 
 .wrapper {
-	max-width: 600px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+	max-width: 680px;
+	justify-content: space-betwen;
 	margin: auto;
 	padding: 60px 30px 60px 30px;
 	@media screen and (max-width: $br) {
@@ -120,11 +131,13 @@ ul {
 }
 
 
-.header {
+.sidebar {
+    width:200px;
 	display: flex;
-	justify-content: space-between;
-	align-items: baseline;
-	padding-bottom: 30px;
+	flex-direction:column;
+	justify-content: flex-start;
+	align-items: flex-end;
+	margin-right:40px;
 	@media screen and (max-width: $br) {
 		display: block;
 	}
@@ -136,12 +149,27 @@ ul {
 		margin-bottom: 0;
 	}
 	ul {
-		margin-top: 10px;
+		display:flex;
+		flex-direction:column;
+		justify-content:flex-start;
+		align-items:flex-end;
+		margin-top: 40px;
 		li {
+			height:30px;
 			display: inline;
 			padding: 0;
 			padding-left: 5px;
 		}
+
+		li.active{
+			a{
+				font-weight:900;
+			}
+            :before{
+                content: '> '
+            }
+		}
+
 	}
 }
 
@@ -177,9 +205,6 @@ ul {
 	}
 }
 
-.post__title, .resume__title, .page__title{
-    text-align:center;
-}
 .post__date, .resume__data, .page__date{
     text-align:right;
 }
@@ -322,4 +347,42 @@ ul {
     color:#cecece; 
     margin:20px 0;
 }
+
+
+
+/* cusom */
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.service .logo{
+    margin:0 0 30px 0;
+}
+
+.service .desc{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.service .btn{
+    margin:30px 0 30px 0;
+    width:200px;
+    background:green;
+    color:#fff;
+    padding:10px 15px;
+    text-align:center;
+}
+
+.service .btn:hover{
+    background:#126b12;
+    text-decoration: none;
+}
+
 

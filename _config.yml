@@ -29,8 +29,8 @@ kramdown:
 highlighter: rouge
 
 
-gems:
-  - jekyll-gallery-generator
+#gems:
+#  - jekyll-gallery-generator
 
 
 gallery:

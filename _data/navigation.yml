@@ -2,10 +2,13 @@
   url: /
 
 - title: Blog
-  url: /blog
+  url: /blog/
 
 - title: About
-  url: /about
+  url: /about.html
 
 - title: Contact
-  url: /contact
+  url: /contact.html
+
+- title: 小程序开发
+  url: /service.html

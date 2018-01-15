@@ -6,3 +6,6 @@ gem 'jekyll-paginate', group: :jekyll_plugins
 gem 'rmagick'
 gem 'exifr'
 gem 'jekyll-gallery-generator'
+gem 'jekyll-sitemap'
+gem 'jekyll-paginate' 
+gem 'json'

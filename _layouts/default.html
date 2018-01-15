@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" value="提供微信小程序开发,微信H5开发,网站开发等软件开发的外包服务">
 
     {% if page.title %}
         <title>{{ page.title }} - {{ site.name }}</title>
@@ -17,32 +17,31 @@
     {% if site.google_verification %}
         <meta name="google-site-verification" content="{{ site.google_verify }}">
     {% endif %}
-
     <link rel="icon" href="/assets/img/favicon.png?v=3">
-    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css?v=3">
 </head>
 
 <body>
 
     <div class="wrapper">
-        <div class="header">
-            <h1>{{ site.name }}</h1>
+        <div class="sidebar">
+          <h1>{{ site.name }}</h1>
             <ul>
                 {% for item in site.data.navigation %}
-                <li> <a href="{{ item.url }}" target="{{ target }}">{{ item.title }}</a> </li>
+                <li {% if page.url == item.url %}class="active"{% endif %}><a href="{{ item.url }}" target="{{ target }}">{{ item.title }}</a> </li>
                 {% endfor %}
             </ul>
         </div>
         <div class="main-content">
-        {{ content }}
+          {{ content }}
 
-
-
-        </div>
-        <footer>
+          <footer>
             <p class="text-center">自豪地采用Jekyll</p>
-        </footer>
+          </footer>
+        </div>
+
+
     </div>
 
 </body>
