@@ -142,7 +142,6 @@ ul {
 		display: block;
 	}
     a{
-        color:$color-header-link;
     }
 	h1 {
 		font-size: 2em;
@@ -164,6 +163,7 @@ ul {
 		li.active{
 			a{
 				font-weight:900;
+                color:$color-header-link;
 			}
             :before{
                 content: '> '
@@ -315,10 +315,11 @@ ul {
 
 .page {
 	&__title {
-		font-size: 1.6em;
+		font-size: 1.2em;
 		font-weight: 700;
 		margin-top: 10px;
-		margin-bottom: 10px;
+		margin-bottom: 20px;
+        text-align:center;
 	}
 	&__content {
 		margin-top: 20px;
